@@ -1,0 +1,43 @@
+/**
+ * Striped
+ */
+.wp-block-mdlui-block-line-colored-line.is-style-striped .mdlui-block-line--inner,
+.wp-block-mdlui-block-line-colored-line.is-style-striped div div {
+    background-image: linear-gradient(-45deg, transparent 22.5%, currentColor 22.5%, currentColor 27.5%, transparent 27.5%, transparent 47.5%, currentColor 47.5%, currentColor 52.5%, transparent 52.5%, transparent 72.5%, currentColor 72.5%, currentColor 77.5%, transparent 77.5%, transparent);
+    background-position: .3rem 0;
+    background-size: 1rem 1rem;
+    border: none;
+    image-rendering: pixelated;
+}
+
+/**
+ * Shade
+ */
+.wp-block-mdlui-block-line-colored-line.is-style-shade .mdlui-block-line--inner,
+.wp-block-mdlui-block-line-colored-line.is-style-shade div div {
+    position: relative;
+    background: radial-gradient(ellipse farthest-side at top center, rgba(0,0,0,0.08), transparent);
+}
+.wp-block-mdlui-block-line-colored-line.is-style-shade .mdlui-block-line--inner:before,
+.wp-block-mdlui-block-line-colored-line.is-style-shade div div:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(left, transparent, rgba(0,0,0,0.02), rgba(0,0,0,0.02), transparent);
+}
+
+/**
+ * Dotted
+ */
+.wp-block-mdlui-block-line-colored-line.is-style-dotted .mdlui-block-line--inner,
+.wp-block-mdlui-block-line-colored-line.is-style-dotted div div {
+    background: radial-gradient(circle at center, currentColor 2px, transparent 0);
+    background-size: 12px 12px;
+    background-repeat: round;
+
+    image-rendering: auto;
+}
